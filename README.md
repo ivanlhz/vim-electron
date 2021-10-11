@@ -14,5 +14,3 @@ Once installed set the color scheme:
 ```vim
 colorscheme darkfrost
 ```
-## Credits
-- Theme created using [vim-rnb](https://github.com/romainl/vim-rnb)
