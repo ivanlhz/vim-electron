@@ -12,5 +12,9 @@ or use whichever (neo)vim plugin manager you prefer, e.g.:
 
 Once installed set the color scheme:
 ```vim
-colorscheme darkfrost
+colorscheme electron
 ```
+
+## Credits
+- Theme created using [vim-rnb](https://github.com/romainl/vim-rnb)
+
