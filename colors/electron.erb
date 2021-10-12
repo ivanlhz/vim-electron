@@ -7,106 +7,153 @@
         webpage:     "https://github.com/ivanlhz/vim-electron"
     }
 
-    lightred = ["#E96470", 0, "NONE"]
-    red = ["#e63946", 1, "red"]
-    darkgray = ["#EBEBEA", 2, "darkgray"]
-    olive = ["#81A930", 3, "green"]
-    orange = ["#fcbf49", 4, "yellow"]
-    violet = ["#D69AF8", 5, "magenta"]
-    blue = ["#3C4C68", 6, "blue"]
-    darkblue = ["#2F3A51", 7, "darkblue"]
-    foreground = ["#97a7c8", 8, "NONE"]
-    background   = ["#212836", 9, "NONE"]
-    lightblue =  ["#649DEA", 10, "NONE"]
-    activelineblue = ["#818ca6", 11, "NONE"]
-    bluesimbols = ["#3CEFF9", 12, "NONE"]
+    foreground = ["#96a7c9", 0, "NONE"]
+    background   = ["#212837", 1, "NONE"]
+    red = ["#e0616d",2, "NONE"] 
+    orange = ["#f0c181", 3, "NONE"]
+    yellow = ["#fef7a2", 4, "NONE"]
+    blue = ["#69adfe", 5, "NONE"]
+    lightblue = ["#5eeaef", 6, "NONE"]
+    bluewater = ["#55a7b3", 8, "NONE"]
+    darkblue = ["#536783", 9, "NONE"]
+    green = ["#86a44a", 10, "NONE"]
+    lightgreen = ["#77eba7", 11, "NONE"]
+    darkgreen = ["#357162",12, "NONE"]
+    grey = ["#eaeff6", 13, "NONE"]
+    error = ["#e24c4b", 14, "NONE"]
+    secundary = ["#262d3f", 15, "NONE"]
+    violet = ["#d69af6", 16, "NONE"]
 
     highlights = [
         [ "Normal", background, foreground, "NONE" ],
-        [ "NonText",darkgray , darkblue, "NONE" ],
+        [ "NonText",grey , darkblue, "NONE" ],
         [ "EndOfBuffer","Normal"],
-        [ "Comment", "NONE", blue, "NONE" ],
+        [ "Comment", "NONE", darkblue, "NONE" ],
         [ "Constant", "NONE", violet, "NONE" ],
-        [ "Error", red,darkgray, "NONE" ],
+        [ "Error", "NONE", error, "NONE" ],
         [ "Identifier", "NONE", orange, "NONE" ],
-        [ "Function","NONE", lightblue, "NONE" ],
-        [ "Ignore", "NONE", darkgray, "NONE" ],
-        [ "PreProc", "NONE", olive, "NONE" ],
-        [ "Special", "NONE", violet, "NONE" ],
-        [ "Statement", "NONE", violet, "NONE" ],
-        [ "String", "NONE", darkgray, "NONE" ],
-        [ "Number", "NONE", lightred, "NONE" ],
-        [ "Todo", "NONE", darkgray, "NONE" ],
-        [ "Type", "NONE", violet, "NONE" ],
-        [ "Underlined", "NONE", darkgray, "NONE" ],
-        [ "StatusLine", "NONE", darkgray, "NONE" ],
-        [ "StatusLineNC", "NONE", darkgray, "NONE" ],
+        [ "Function","NONE", blue, "NONE" ],
+        [ "Ignore", "NONE", grey, "NONE" ],
+        [ "PreProc", "NONE", violet, "NONE" ],
+        [ "Special", "NONE", red, "NONE" ],
+        [ "Statement","NONE" , violet, "NONE" ],
+        [ "Operator","NONE" , lightblue, "NONE" ],
+        [ "String", "NONE", grey, "NONE" ],
+        [ "Number", "NONE", red, "NONE" ],
+        [ "Todo", "NONE", grey, "NONE" ],
+        [ "Type", "NONE", violet , "NONE" ],
+        [ "Underlined", "NONE", grey, "NONE" ],
+        [ "StatusLine", "NONE", grey, "NONE" ],
+        [ "StatusLineNC", "NONE", grey, "NONE" ],
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
-        [ "VertSplit", "NONE", darkgray, "NONE" ],
-        [ "TabLine", "NONE", darkgray, "NONE" ],
-        [ "TabLineFill", "NONE", darkgray, "NONE" ],
-        [ "TabLineSel", "NONE", darkgray, "NONE" ],
+        [ "VertSplit", "NONE", foreground, "NONE" ],
+        [ "TabLine", "NONE", grey, "NONE" ],
+        [ "TabLineFill", "NONE", grey, "NONE" ],
+        [ "TabLineSel", "NONE", grey, "NONE" ],
         [ "Title", "NONE", orange, "NONE" ],
-        [ "CursorLine", blue, "NONE", "NONE" ],
-        [ "LineNr", "NONE", blue, "NONE" ],
-        [ "CursorLineNr", "NONE", activelineblue, "NONE" ],
-        [ "helpLeadBlank", "NONE", darkgray, "NONE" ],
-        [ "helpNormal", "NONE", darkgray, "NONE" ],
+        [ "CursorLine", secundary, "NONE", "NONE" ],
+        [ "LineNr", "NONE", darkblue, "NONE" ],
+        [ "CursorLineNr", "NONE", blue, "NONE" ],
+        [ "helpLeadBlank", "NONE", grey, "NONE" ],
+        [ "helpNormal", "NONE", grey, "NONE" ],
         [ "Visual", darkblue, "NONE", "NONE" ],
-        [ "VisualNOS", "NONE", darkgray, "NONE" ],
-        [ "Pmenu", lightblue, darkblue, "NONE" ],
-        [ "PmenuSbar", lightblue, darkgray, "NONE" ],
-        [ "PmenuSel", darkblue, darkgray, "NONE" ],
-        [ "PmenuThumb", "NONE", darkgray, "NONE" ],
-        [ "FoldColumn", "NONE", darkgray, "NONE" ],
-        [ "Folded", "NONE", darkgray, "NONE" ],
-        [ "WildMenu", "NONE", darkgray, "NONE" ],
-        [ "SpecialKey", "NONE", darkgray, "NONE" ],
-        [ "DiffAdd", "NONE", darkgray, "NONE" ],
-        [ "DiffChange", "NONE", darkgray, "NONE" ],
-        [ "DiffDelete", "NONE", darkgray, "NONE" ],
-        [ "DiffText", "NONE", darkgray, "NONE" ],
+        [ "VisualNOS", "NONE", grey, "NONE" ],
+        [ "Pmenu", darkblue, grey, "NONE" ],
+        [ "PmenuSbar", lightblue, grey, "NONE" ],
+        [ "PmenuSel", darkblue, grey, "NONE" ],
+        [ "PmenuThumb", "NONE", grey, "NONE" ],
+        [ "FoldColumn", "NONE", grey, "NONE" ],
+        [ "Folded", "NONE", grey, "NONE" ],
+        [ "WildMenu", "NONE", grey, "NONE" ],
+        [ "SpecialKey", "NONE", grey, "NONE" ],
+        [ "DiffAdd", "NONE", grey, "NONE" ],
+        [ "DiffChange", "NONE", grey, "NONE" ],
+        [ "DiffDelete", "NONE", grey, "NONE" ],
+        [ "DiffText", "NONE", grey, "NONE" ],
         [ "IncSearch", "NONE", red, "NONE" ],
-        [ "Search", "NONE", darkgray, "NONE" ],
-        [ "Directory", "NONE", darkgray, "NONE" ],
-        [ "MatchParen", "NONE", darkgray, "NONE" ],
-        [ "SpellBad", "NONE", darkgray, "NONE", red ],
-        [ "SpellCap", "NONE", darkgray, "NONE", blue ],
-        [ "SpellLocal", "NONE", darkgray, "NONE", violet ],
-        [ "SpellRare", "NONE", darkgray, "NONE", orange ],
-        [ "ColorColumn", "NONE", darkgray, "NONE" ],
+        [ "Search", "NONE", grey, "NONE" ],
+        [ "Directory", "NONE", grey, "NONE" ],
+        [ "MatchParen", "NONE", grey, "NONE" ],
+        [ "SpellBad", "NONE", error, "NONE", red ],
+        [ "SpellCap", "NONE", grey, "NONE", blue ],
+        [ "SpellLocal", "NONE", grey, "NONE", red ],
+        [ "SpellRare", "NONE", grey, "NONE", orange ],
+        [ "ColorColumn", "NONE", grey, "NONE" ],
         [ "SignColumn", "NONE", blue, "NONE" ],
-        [ "ErrorMsg", "NONE", darkgray, "NONE" ],
-        [ "ModeMsg", "NONE", darkgray, "NONE" ],
-        [ "MoreMsg", "NONE", darkgray, "NONE" ],
-        [ "Question", "NONE", darkgray, "NONE" ],
-        [ "WarningMsg", "Error" ],
-        [ "Cursor", "NONE", darkgray, "NONE" ],
+        [ "ErrorMsg", "NONE", red, "NONE" ],
+        [ "ModeMsg", "NONE", grey, "NONE" ],
+        [ "MoreMsg", "NONE", grey, "NONE" ],
+        [ "Question", "NONE", grey, "NONE" ],
+        [ "WarningMsg","NONE", orange, "NONE" ],
+        [ "Cursor", "NONE", grey, "NONE" ],
         [ "CursorIM", "Cursor" ],
-        [ "CursorColumn", "NONE", darkgray, "NONE" ],
-        [ "QuickFixLine", "NONE", darkgray, "NONE" ],
+        [ "CursorColumn", "NONE", grey, "NONE" ],
+        [ "QuickFixLine", "NONE", grey, "NONE" ],
         [ "Terminal", "Normal" ],
-        [ "Conceal", "NONE", darkgray, "NONE" ],
-        [ "ToolbarLine", "NONE", darkgray, "NONE" ],
-        [ "ToolbarButton", "NONE", darkgray, "NONE" ],
-        [ "debugPC", "NONE", darkgray, "NONE" ],
-        [ "debugBreakpoint", "NONE", darkgray, "NONE" ],
+        [ "Conceal", "NONE", grey, "NONE" ],
+        [ "ToolbarLine", "NONE", grey, "NONE" ],
+        [ "ToolbarButton", "NONE", grey, "NONE" ],
+        [ "debugPC", "NONE", grey, "NONE" ],
+        [ "debugBreakpoint", "NONE", grey, "NONE" ],
+        [ "GitGutterAdd", "NONE" ,green, "NONE"],
+        [ "GitGutterChange", "NONE", blue, "NONE"],
+        [ "GitGutterDelete","NONE" ,error, "NONE"],
+        [ "GitGutterChangeDelete", "NONE", orange, "NONE"],
+        [ "jsThis", "NONE", orange, "NONE"],
+        [ "jsUndefined", "NONE", yellow, "NONE"],
+        [ "jsNull", "NONE", yellow, "NONE"],
+        [ "jsNan", "NONE", orange, "NONE"],
+        [ "jsSuper", "NONE", "NONE", "NONE"],
+        [ "jsString", "NONE", lightgreen, "NONE"],
+        [ "jsPrototype", "NONE", "NONE", "NONE"],
+        [ "jsFunction", "NONE", violet, "NONE"],
+        [ "jsFuncName", "NONE", blue, "NONE" ],
+        [ "jsGlobalNodeObjects", "NONE",yellow ,"NONE"],
+        [ "jsGlobalObjects", "NONE",yellow, "NONE"],
+        [ "jsArrowFunction", "NONE" , violet, "NONE"],
+        [ "jsArrowFuncArgs", "NONE", "NONE", "NONE"],
+        [ "jsFuncArgs", "NONE", "NONE", "NONE"],
+        [ "jsObjectProp", "NONE", red, "NONE"],
+        [ "jsVariableDef", "NONE", "NONE", "NONE"],
+        [ "jsObjectKey", "NONE", grey, "NONE"],
+        [ "jsParen","NONE", blue, "NONE"],
+        [ "jsParenIfElse", "NONE", lightblue, "NONE"],
+        [ "jsParenRepeat",  "NONE", "NONE" ,"NONE"],
+        [ "jsParenSwitch", "NONE", lightblue, "NONE"],
+        [ "jsParenCatch", "NONE", lightblue, "NONE"],
+        [ "jsBracket", "NONE", "NONE", "NONE"],
+        [ "jsBlockLabel", "NONE", orange, "NONE"],
+        [ "jsFunctionKey", "NONE", orange, "NONE"],
+        [ "jsClassDefinition", "NONE", blue, "NONE"],
+        [ "jsDot", "NONE", lightblue, "NONE"],
+        [ "jsDestructuringBlock", "NONE", lightblue, "NONE"],
+        [ "jsSpreadExpression", "NONE", lightblue, "NONE"],
+        [ "jsSpreadOperator", "NONE", lightblue, "NONE"],
+        [ "jsModuleKeyword", "NONE", "NONE", "NONE"],
+        [ "jsObjectValue", "NONE", "NONE", "NONE"],
+        [ "jsTemplateExpression", "NONE", orange, "NONE"],
+        [ "jsTemplateBraces", "NONE", orange, "NONE"],
+        [ "jsClassMethodType", "NONE", orange, "NONE"],
     ]
 
     terminal_ansi_colors = [
-        lightred,
-        red,
-        darkgray,
-        olive,
-        orange,
-        violet,
-        blue,
-        darkblue,
         foreground,
         background,
+        red,
+        yellow,
+        orange,
+        grey,
+        blue,
+        bluewater,
         lightblue,
-        activelineblue
+        darkblue,
+        green,
+        lightgreen,
+        error,
+        darkgreen,
+        secundary,
+        violet
     ]
 -%>
 " <%= information[:name] %>.vim -- Vim color scheme.
@@ -120,6 +167,8 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
+
+set background=dark
 
 let colors_name = "<%= information[:name].downcase %>"
 
