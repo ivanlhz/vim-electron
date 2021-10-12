@@ -103,10 +103,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi jsVariableDef ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi jsObjectKey ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi jsParen ctermbg=NONE ctermfg=5 cterm=NONE guibg=NONE guifg=#69adfe gui=NONE
-    hi jsParenIfElse ctermbg=NONE ctermfg=6 cterm=NONE guibg=NONE guifg=#5eeaef gui=NONE
+    hi jsParenIfElse ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi jsParenRepeat ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
-    hi jsParenSwitch ctermbg=NONE ctermfg=6 cterm=NONE guibg=NONE guifg=#5eeaef gui=NONE
-    hi jsParenCatch ctermbg=NONE ctermfg=6 cterm=NONE guibg=NONE guifg=#5eeaef gui=NONE
+    hi jsParenSwitch ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
+    hi jsParenCatch ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi jsBracket ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi jsBlockLabel ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#f0c181 gui=NONE
     hi jsFunctionKey ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#f0c181 gui=NONE
