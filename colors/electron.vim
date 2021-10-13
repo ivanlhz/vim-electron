@@ -2,7 +2,7 @@
 " Author:      ivanlhz (ivanlhz@gmail.com)
 " Webpage:     https://github.com/ivanlhz/vim-electron
 " Description: Vim version of the electron vscode theme.
-" Last Change: 2021-10-12
+" Last Change: 2021-10-13
 
 hi clear
 
@@ -47,8 +47,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Visual ctermbg=9 ctermfg=NONE cterm=NONE guibg=#536783 guifg=NONE gui=NONE
     hi VisualNOS ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi Pmenu ctermbg=9 ctermfg=13 cterm=NONE guibg=#536783 guifg=#eaeff6 gui=NONE
-    hi PmenuSbar ctermbg=6 ctermfg=13 cterm=NONE guibg=#5eeaef guifg=#eaeff6 gui=NONE
-    hi PmenuSel ctermbg=9 ctermfg=13 cterm=NONE guibg=#536783 guifg=#eaeff6 gui=NONE
+    hi PmenuSbar ctermbg=9 ctermfg=13 cterm=NONE guibg=#536783 guifg=#eaeff6 gui=NONE
+    hi PmenuSel ctermbg=5 ctermfg=9 cterm=NONE guibg=#69adfe guifg=#536783 gui=NONE
     hi PmenuThumb ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi Folded ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
@@ -58,8 +58,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffChange ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi DiffDelete ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi DiffText ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
-    hi IncSearch ctermbg=NONE ctermfg=2 cterm=NONE guibg=NONE guifg=#e0616d gui=NONE
-    hi Search ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
+    hi IncSearch ctermbg=2 ctermfg=2 cterm=NONE guibg=#e0616d guifg=#e0616d gui=NONE
+    hi Search ctermbg=6 ctermfg=9 cterm=NONE guibg=#5eeaef guifg=#536783 gui=NONE
     hi Directory ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi SpellBad ctermbg=NONE ctermfg=14 cterm=NONE guibg=NONE guifg=#e24c4b gui=NONE guisp=#e0616d
@@ -81,6 +81,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi ToolbarButton ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi debugPC ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
     hi debugBreakpoint ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#eaeff6 gui=NONE
+    hi border ctermbg=NONE ctermfg=6 cterm=NONE guibg=NONE guifg=#5eeaef gui=NONE
     hi GitGutterAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#86a44a gui=NONE
     hi GitGutterChange ctermbg=NONE ctermfg=5 cterm=NONE guibg=NONE guifg=#69adfe gui=NONE
     hi GitGutterDelete ctermbg=NONE ctermfg=14 cterm=NONE guibg=NONE guifg=#e24c4b gui=NONE
@@ -120,6 +121,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi jsTemplateExpression ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#f0c181 gui=NONE
     hi jsTemplateBraces ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#f0c181 gui=NONE
     hi jsClassMethodType ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#f0c181 gui=NONE
+    hi htmlTagName ctermbg=NONE ctermfg=2 cterm=NONE guibg=NONE guifg=#e0616d gui=NONE
+    hi htmlArg ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#f0c181 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -190,6 +193,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi ToolbarButton ctermbg=NONE ctermfg=NONE cterm=NONE
     hi debugPC ctermbg=NONE ctermfg=NONE cterm=NONE
     hi debugBreakpoint ctermbg=NONE ctermfg=NONE cterm=NONE
+    hi border ctermbg=NONE ctermfg=NONE cterm=NONE
     hi GitGutterAdd ctermbg=NONE ctermfg=NONE cterm=NONE
     hi GitGutterChange ctermbg=NONE ctermfg=NONE cterm=NONE
     hi GitGutterDelete ctermbg=NONE ctermfg=NONE cterm=NONE
@@ -229,6 +233,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi jsTemplateExpression ctermbg=NONE ctermfg=NONE cterm=NONE
     hi jsTemplateBraces ctermbg=NONE ctermfg=NONE cterm=NONE
     hi jsClassMethodType ctermbg=NONE ctermfg=NONE cterm=NONE
+    hi htmlTagName ctermbg=NONE ctermfg=NONE cterm=NONE
+    hi htmlArg ctermbg=NONE ctermfg=NONE cterm=NONE
 endif
 
 hi link EndOfBuffer Normal
